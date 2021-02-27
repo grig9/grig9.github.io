@@ -12,12 +12,9 @@ myImage.onclick = function () {
 var myButton  = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 
-
-var myName = prompt('Please enter your name.');
-
-function setUserName(myName = 'stranger') {
- 	
- 	localStorage.setItem('name', myName);
+function setUserName() {
+ 	var myName = prompt('Please enter your name.');
+ 	localStorage.setItem('name', myName = 'stranger');
  	myHeading.textContent = 'Mozilla is cool, ' + myName;
  } 
 
